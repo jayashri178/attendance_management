@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Leave Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://emap-romulus-prod.s3.eu-west-1.amazonaws.com/wp-content/uploads/sites/12/2014/02/index2_687729280.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .back-arrow {
+            display: inline-block;
+            margin-bottom: 20px;
+            cursor: pointer;
+            color: green;
+        }
+        .back-arrow:hover {
+            color: #45a049;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="date"],
+        textarea,
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="student-leave-form" class="container active">
+     
+        <h1>Student Leave Form</h1>
+        <form id="studentLeaveForm">
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" name="student_name" required>
+
+            <label for="register-number">Register Number:</label>
+            <input type="text" id="register-number" name="register_number" required>
+
+            <label for="leave-date">Leave Date:</label>
+            <input type="date" id="leave-date" name="leave_date" required>
+
+            <label for="reason">Reason for Leave:</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+
+             <a href="success.html">
+             <button type="button" value="submit">submit</button>
+        </form>
+    </div>
+</body>
+</html>
