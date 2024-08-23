@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System - Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.re-thinkingthefuture.com/architectural-styles/a9462-10-finest-examples-of-institutional-design-in-india/attachment/a9462-10-finest-examples-of-institutional-design-in-india-10/');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none; /* Hide all sections initially */
+        }
+        .container.active {
+            display: block; /* Show the active section */
+        }
+        .back-arrow {
+            display: inline-block;
+            margin-bottom: 20px;
+            cursor: pointer;
+            color: green;
+        }
+        .back-arrow:hover {
+            color: #45a049;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .category-link {
+            display: block;
+            padding: 10px;
+            background-color: green;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .category-link:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Categories Page -->
+    <div id="categories" class="container active">
+        
+        <h1>Attendance Management System - Categories</h1>
+        <ul>
+            <li><a href="student_attentdance.html" class="category-link">Student Attendance Form</a></li>
+            <li><a href="employee_attendance.html" class="category-link">Employee  Attendance Form</a></li>
+            <li><a href="student_leave.html" class="category-link">Student Leave Application Form</a></li>
+            <li><a href="employee_leave.html" class="category-link">Employee Leave Application Form</a></li>
+            <li><a href="correction.html" class="category-link">correction Form</a></li>
+        </ul>
+    </div>
+</body>
+</html>
